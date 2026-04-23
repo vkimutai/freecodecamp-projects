@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Website Viewer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    nav {
+      margin-bottom: 15px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+      background-color: #007BFF;
+      padding: 8px 12px;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #1eb300;
+    }
+
+    iframe {
+      border: 2px solid #333;
+      width: 80%;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mini Website Viewer</h1>
+
+  <!-- Navigation Links -->
+  <nav>
+    <a href="https://www.example.com" target="viewer">Example</a>
+    <a href="https://www.wikipedia.org" target="viewer">Wikipedia</a>
+    <a href="https://www.openstreetmap.org" target="viewer">OpenStreetMap</a>
+  </nav>
+
+  <!-- The iframe must have a name -->
+  <iframe name="viewer" title="Website Viewer"></iframe>
+
+</body>
+</html>
