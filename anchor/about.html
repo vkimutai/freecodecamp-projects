@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page Anchors</title>
+  <style>
+    /* make sections tall so scrolling is visible */
+    section {
+      height: 600px;
+      padding: 40px;
+      font-size: 24px;
+    }
+
+    /* sticky nav stays at top while scrolling */
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      padding: 15px;
+      border-bottom: 2px solid #ddd;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: steelblue;
+      font-weight: bold;
+    }
+
+    #about    { background-color: #fff3cd; }
+    #services { background-color: #d1ecf1; }
+    #contact  { background-color: #d4edda; }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation with anchor links -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Sections with matching ids -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to our company page.</p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <p>Here is what we offer.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Get in touch with us.</p>
+  </section>
+
+</body>
+</html>
