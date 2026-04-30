@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device width" initial-scale="1.0">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">Customer Satisfaction Survey</h1>
+  <p id="description">Thank you for taking the time to help us improve our services. Please fill out the survey below.
+  </p>
+  <form id="survey-form">
+    <fieldset>
+      <legend>Personal Info</legend>
+      <label for="name" id="name-label">Enter Full Name</label>
+      <input type="text" id="name" name="full_name" required Placeholder="Enter your full name">
+      <br>
+      <label for="email" id="email-label">Enter Your Email</label>
+      <input type="email" id="email" name="email" required Placeholder="example@gmail.com" maxlength="50" minlength="4">
+      <br>
+      <label for="number" id="number-label">Enter Your Age</label>
+      <input type="number" id="number" name="age" min="18" max="40" placeholder="enter your age" required>
+    </fieldset>
+    <fieldset>
+      <legend>What best describes your current role?
+      </legend>
+      <label for="dropdown">Choose your current role</label>
+      <select id="dropdown" name="current_role">
+        <option value="student" selected>Student</option>
+        <optgroup label="Employed">
+          <option value="full_time_job">Full-time Job</option>
+          <option value="part_time_Job">Part-time Job</option>
+        </optgroup>
+        <option value="self_employed">Self-Employed</option>
+        <option value="Prefer_not_to_say">Prefer not to say</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Would you recommend our service to a friend?
+      </legend>
+      <p>Choose your options below:</p>
+      <ol>
+        <li>
+          <input type="radio" id="definitely" name="recommendation" value="definitely">
+          <label for="definitely">Definitely</label>
+        </li>
+        <li>
+          <input type="radio" id="maybe" name="recommendation" value="maybe">
+          <label for="maybe">Maybe</label>
+        </li>
+        <li>
+          <input type="radio" id="not_sure" name="recommendation" value="not_sure">
+          <label for="not_sure">Not sure</label>
+        </li>
+    </fieldset>
+    <fieldset>
+      <legend>What would you like to see improved?
+      </legend>
+      <ul>
+        <li>
+          <label for="customer_support">Customer Support</label>
+          <input type="checkbox" name="improvement" id="customer_support" value="customer_support">
+        </li>
+        <li>
+          <label for="website_design">Website Design</label>
+          <input type="checkbox" id="website_design" name="improvement" value="website_design">
+        </li>
+        <li>
+          <label for="pricing">Pricing</label>
+          <input type="checkbox" id="pricing" name="improvement" value="pricing">
+        </li>
+        <li>
+          <label for="product_quality">Product Quality</label>
+          <input type="checkbox" id="product_quality" name="improvement" value="product_quality" checked>
+        </li>
+        <li>
+          <label for="delivery_speed">Delivery Speed</label>
+          <input type="checkbox" id="delivery_speed" name="improvement" value="delivery_speed">
+        </li>
+    </fieldset>
+    <p>Any other comment about our services</p>
+    <textarea placeholder="Type your message here" rows="10" cols="40">
+    </textarea>
+    <button id="submit" type="submit">Submit form</button>
+  </form>
+</body>
+
+</html>
