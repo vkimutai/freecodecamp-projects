@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device width" initial-scale="1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Survey Form</title>
 </head>
 
@@ -34,7 +34,7 @@
           <option value="part_time_Job">Part-time Job</option>
         </optgroup>
         <option value="self_employed">Self-Employed</option>
-        <option value="Prefer_not_to_say">Prefer not to say</option>
+        <option value="prefer_not_to_say">Prefer not to say</option>
       </select>
     </fieldset>
     <fieldset>
@@ -54,6 +54,7 @@
           <input type="radio" id="not_sure" name="recommendation" value="not_sure">
           <label for="not_sure">Not sure</label>
         </li>
+      </ol>
     </fieldset>
     <fieldset>
       <legend>What would you like to see improved?
@@ -79,9 +80,10 @@
           <label for="delivery_speed">Delivery Speed</label>
           <input type="checkbox" id="delivery_speed" name="improvement" value="delivery_speed">
         </li>
+      </ul>
     </fieldset>
     <p>Any other comment about our services</p>
-    <textarea placeholder="Type your message here" rows="10" cols="40">
+    <textarea placeholder="Type your message here" name="comment" rows="10" cols="40">
     </textarea>
     <button id="submit" type="submit">Submit form</button>
   </form>
