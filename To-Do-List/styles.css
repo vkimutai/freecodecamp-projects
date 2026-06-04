@@ -1,0 +1,65 @@
+body{
+  width: 100%;
+  background-color: lightpink;
+}
+h1{
+  text-align: center;
+}
+.list{
+  background-color: lightgreen;
+  width:50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.list li{
+  margin-left:auto;
+  margin-right:auto; 
+  
+  background-color: lightblue;
+  margin-bottom: 5px;
+  border: 2px solid lightblue;
+  border-radius: 10px;
+  list-style-type: none;
+  width: 70%;
+}
+
+.sub-item li{
+  list-style-type: circle;
+  list-style-position: outside;
+  margin-top: 5px;
+  
+}
+
+.sub-item-link {
+  text-decoration: none;
+
+}
+ 
+input{
+margin: 10px;
+}
+  
+a:link{
+  color: rgb(165, 115, 29)
+}
+
+a:visited{
+  color: violet
+}
+
+a:hover{
+  color: grey
+}
+
+a:focus {
+  color: red;
+  outline: 2px orange;
+}
+
+a:active{
+  color: green
+}
+
